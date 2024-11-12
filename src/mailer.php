@@ -10,7 +10,7 @@ use Symfony\Component\Mime\Email;
 use Symfony\Component\Mime\Header\UnstructuredHeader;
 
 function sendMail($to, $subject, $messageBody) {
-    $apiKey = getenv('MAILTRAP_API_KEY');
+    $apiKey = "0a5099be57c44ab6da06885475d605c3";
     echo "Mailtrap API Key: " . $apiKey;
 
     $mailtrap = MailtrapClient::initSendingEmails(
